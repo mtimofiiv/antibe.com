@@ -3,11 +3,27 @@
   App = (function() {
 
     function app() {
-
+      window.app = this;
+      this.waypoint('.section-home', 'removeAllActive', null);
+      this.waypoint('.section-team', 'toggleActiveState', '#nav-team');
+      this.waypoint('.section-services', 'toggleActiveState', '#nav-services');
+      this.waypoint('.section-join', 'toggleActiveState', '#nav-join');
+      this.waypoint('.section-contact', 'toggleActiveState', '#nav-contact');
     }
 
-    app.prototype.waypoint = function() {
-      
+    app.prototype.waypoint = function(el, callback, affected) {
+      $(el).waypoint(function() {
+        window.app[callback](affected);
+      });
+    }
+
+    app.prototype.toggleActiveState = function(el) {
+      this.removeAllActive();
+      $(el).addClass('active');
+    }
+
+    app.prototype.removeAllActive = function() {
+      $('.active').removeClass('active');
     }
 
     app.prototype.listen = function(el, trigger, callback) {

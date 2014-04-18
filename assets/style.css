@@ -85,6 +85,10 @@ header ul.main-nav li a {
   color: white;
 }
 
+header ul.main-nav li a.active {
+  color: #ccc;
+}
+
 .contain {
   width: 1000px;
   margin: 0 auto;
