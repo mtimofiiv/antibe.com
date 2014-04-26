@@ -53,6 +53,7 @@
 
   p.announce {
     font-size: 18px;
+    padding: 50px 0;
   }
 
   p.announce-big {
@@ -60,7 +61,8 @@
   }
 
   a.big-link-btn, a.big-link-btn:visited {
-    font-size: 16px;
+    font-size: 20px;
+    width: 80%;
   }
 
   a.big-link-btn i {
@@ -69,6 +71,27 @@
 
   .personel .dave {
     width: 100%;
+    border-right: 0;
+  }
+
+  .personel .dave h3 {
+    font-size: 34px;
+  }
+
+  .personel .dave h3 small {
+    font-size: 24px;
+  }
+
+  .personel .resources {
+    width: 100%;
+  }
+
+  .personel .resources ul li span {
+    top: 12px;
+  }
+
+  .personel .resources ul li small {
+    display: none;
   }
 }
 
