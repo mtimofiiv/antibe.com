@@ -124,7 +124,107 @@
 }
 
 @media (max-width: 419px) {
+
+  .contain {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5%;
+  }
+
+  .branding img {
+    width: 50px;
+    height: 40px;
+  }
+
   header ul.main-nav {
     display: none;
+  }
+
+  .section-home {
+    margin-top: 50px;
+  }
+
+  .section-home h1 {
+    font-size: 50px;
+  }
+
+  .section-home div.tagline p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  h2.section-marker {
+    font-size: 40px;
+  }
+
+  p.announce {
+    font-size: 18px;
+    padding: 50px 0;
+  }
+
+  p.announce-big {
+    font-size: 24px;
+  }
+
+  a.big-link-btn, a.big-link-btn:visited {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  a.big-link-btn i {
+    font-size: 18px;
+  }
+
+  .personel .dave {
+    width: 100%;
+    border-right: 0;
+  }
+
+  .personel .dave h3 {
+    font-size: 34px;
+  }
+
+  .personel .dave h3 small {
+    font-size: 24px;
+  }
+
+  .personel .resources ul {
+    width: 100%;
+  }
+
+  .personel .resources ul li span {
+    top: 12px;
+  }
+
+  .personel .resources ul li small {
+    display: none;
+  }
+
+  .services-array {
+
+  }
+
+  .services-array li {
+    width: 100%;
+    float: none;
+    border: 0;
+    height: auto;
+  }
+
+  .services-array .v-keyline {
+    display: none;
+  }
+
+  .services-array li .graphic {
+    display: none;
+  }
+
+  .services-array li h3 {
+    text-align: left;
+  }
+
+  .services-array li p {
+    text-align: left;
+    padding: 0;
   }
 }
