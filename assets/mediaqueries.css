@@ -125,6 +125,10 @@
 
 @media (max-width: 419px) {
 
+  header {
+    height: 50px;
+  }
+
   .contain {
     width: 100%;
     box-sizing: border-box;
