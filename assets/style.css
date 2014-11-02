@@ -189,7 +189,6 @@ p.announce-big {
 
 .personel .resources ul li {
   font-size: 24px;
-  height: 37px;
   clear: left;
   padding: 0 0 30px 0;
   line-height: 0.8;
@@ -204,14 +203,16 @@ p.announce-big {
   border: 4px #83161a solid;
 }
 
-.personel .resources ul li span {
+.personel .resources ul li h4 {
   top: 4px;
   position: relative;
+  padding: 0 0 15px 0;
 }
 
-.personel .resources ul li small {
+.personel .resources ul li p {
   font-size: 14px;
   color: #383838;
+  line-height: 1.225;
 }
 
 .section-services {
