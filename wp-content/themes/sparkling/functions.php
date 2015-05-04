@@ -203,20 +203,32 @@ function sparkling_scripts() {
 		wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
   }
 
+  // wp_enqueue_style( 'font-awesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
   // Add main theme stylesheet
-	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
 
   // Add Modernizr for better HTML5 and CSS3 support
   wp_enqueue_script('sparkling-modernizr', get_template_directory_uri().'/inc/js/modernizr.min.js', array('jquery') );
 
   // Add Bootstrap default JS
-	wp_enqueue_script('sparkling-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
+  wp_enqueue_script('sparkling-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
   // Add slider JS only if is front page ans slider is enabled
-	if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
-		wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
-	}
+  if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
+    wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
+  }
 
+  wp_enqueue_style( 'custom-styles', get_template_directory_uri() . '/css/style.css' );
+  wp_enqueue_style( 'media-queries', get_template_directory_uri() . '/css/mediaqueries.css' );
+
+  if( is_front_page() ) {
+
+
+    wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), '3.3.0', true );
+    wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/waypoints.min.js', array('jquery'), '2.0.4', true);
+    wp_enqueue_script( 'waypoint-script', get_template_directory_uri() . '/js/script.js', array('waypoints'), '1.0.0', true );
+
+  }
   // Main theme related functions
 	wp_enqueue_script( 'sparkling-bootstrapwp', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
 
@@ -270,3 +282,6 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load custom nav walker
  */
 require get_template_directory() . '/inc/navwalker.php';
+
+require get_template_directory() . '/inc/menu-helpers.php';
+require get_template_directory() . '/theme-plugins/staff/staff.php';

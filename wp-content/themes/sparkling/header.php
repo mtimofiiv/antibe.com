@@ -40,39 +40,54 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header <?php echo is_front_page() ? 'header-fixed' : ''; ?>" role="banner">
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
+				        <div class="navbar-header">
+				            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+				                <span class="sr-only">Toggle navigation</span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				            </button>
 
-				<?php if( get_header_image() != '' ) : ?>
+						<?php if( get_header_image() != '' ) : ?>
 
-					<div id="logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-					</div><!-- end of #logo -->
+							<div id="logo">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+							</div><!-- end of #logo -->
 
-				<?php endif; // header image was removed ?>
+						<?php endif; // header image was removed ?>
 
-				<?php if( !get_header_image() ) : ?>
+						<?php if( !get_header_image() ) : ?>
 
-					<div id="logo">
-						<a class="main-logo" href="http://antibe.com"><img src="http://antibe.com/assets/branding.png"></a>
-            <a class="blog-home" href="/">Blog</a>
-					</div><!-- end of #logo -->
+							<div id="logo">
+								<a class="main-logo" href="http://antibe.com"><img src="http://antibe.com/assets/branding.png"></a>
+								
+					            <!-- <a class="blog-home" href="<?php bloginfo('url'); ?>">Blog</a> -->
+							</div><!-- end of #logo -->
 
-				<?php endif; // header image was removed (again) ?>
+						<?php endif; // header image was removed (again) ?>
 
-		        </div>
-					<?php sparkling_header_menu(); ?>
-					</div>
+				        </div>
+				        <div id="main-nav" class="collapse navbar-collapse">
+				        	<?php $relative_path = get_relative_menu_path(); ?>
+				        	<ul class="main-nav" data-scroll-header>
+								<li><a id="nav-team" href="<?php echo $relative_path; ?>#team" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Dave &amp; the Team</a></li>
+								<li class="hide-xs show-sm">|</li>
+								<li><a id="nav-services" href="<?php echo $relative_path; ?>#services" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Services</a></li>
+								<li class="hide-xs show-sm">|</li>
+								<li><a id="nav-join" href="<?php echo $relative_path; ?>#join" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Join Us</a></li>
+								<li class="hide-xs show-sm">|</li>
+								<li><a id="nav-contact" href="<?php echo $relative_path; ?>#contact" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Contact Us</a></li>
+								<li class="hide-xs show-sm">|</li>
+								<li><a href="http://blog.antibe.com">Blog</a></li>
+							</ul>
+				        </div>
+					<?php // sparkling_header_menu(); ?>
+				</div>
 		    </div>
 		  </div>
 		</nav><!-- .site-navigation -->
