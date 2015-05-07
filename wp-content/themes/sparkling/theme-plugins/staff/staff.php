@@ -124,4 +124,59 @@ function get_staff_args($args=array()) {
     return $args;
 }
 
+function get_staff_by_term($term, $args=array()) {
+
+    $args['tax_query'] = array(
+        array(
+            'taxonomy' => 'specialty',
+            'field' => 'slug',
+            'terms' => $term
+            )
+        );
+
+    return get_staff($args);
+
+}
+
+function get_staff_by_all_terms($args=array()) {
+
+    $terms = get_terms('specialty');
+
+    $all_staff = array();
+
+    foreach($terms as $term) {
+
+        $staff = get_staff_by_term($term->slug);
+        $all_staff[] = array(
+            'staff' => $staff,
+            'term'  => $term,
+            );
+    }
+
+    return $all_staff;
+}
+
+function get_staff_img($id) {
+
+    $attr = array('class' => 'img-responsive');
+
+    if( has_post_thumbnail($id) ) {
+        return get_the_post_thumbnail( $id, $attr );
+    }
+
+    return get_default_staff_img($attr);
+
+}
+
+function get_default_staff_img($attr=array()) {
+
+    $class = isset($attr['class']) ? $attr['class'] : '';
+    $html = '<img src="' . get_default_staff_img_url() . '" class="' . $class . '">';
+
+    return $html;
+}
+
+function get_default_staff_img_url() {
+    return get_template_directory_uri() . '/img/incognito.jpg';
+}
 ?>

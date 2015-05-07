@@ -4,7 +4,27 @@
  */
 get_header('home');
 ?>
+<div class="screen-sm-min"></div>
+<div class="screen-md-min"></div>
 
+<div id="modal-window" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">
+					
+				</h4>
+			</div>
+			<div class="modal-body">
+				
+			</div>
+			<div class="modal-footer">
+				
+			</div>
+		</div>
+	</div>
+</div>
 <div class="section-home">
 	<div class="container">
 		<a name="home" id="home"></a>
@@ -27,6 +47,7 @@ get_header('home');
 			</h2>
 		</div>
 	</div>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, expedita. Amet voluptas, fugiat modi esse eos dolorem maiores necessitatibus temporibus facilis sapiente sequi quisquam, adipisci hic earum praesentium ut debitis.
 	<div class="container">
 		<p class="announce">We are a network of highly experienced professionals covering a wide-range of roles, who are matched to each project based on its needs. Our primary team is built from a group of people who have many years of previous experience working together on diverse projects and who all believe in delivering excellence through collaboration and trust.</p>
 	</div>
@@ -45,88 +66,81 @@ get_header('home');
 			</p>
 		</div>
 	</div>
-	<div class="container">
-		<div class="personel">
-			<!-- <div class="dave">
-				<div class="img-brace bubble-big" style="background: url('assets/dave.jpg'); background-position: top center; background-size: cover;"></div>
-				<h3>Dave Rogers <br><small>President</small></h3>
-				<p>Dave has over 30 years of professional engineering and consulting experience spanning a wide range of industries, including Public Sector, Health, Education, Energy Resources and Travel, with companies such as Coopers &amp; Lybrand, PricewaterhouseCoopers and IBM. His focus on quality assurance, delivery excellence and global delivery have earned him the reputation as a trusted Executive Advisor for both service providers and their clients. Through Antibe Resources Ltd he is seeking to continue working on his passion of large-scale project delivery by building a network of trusted and experienced colleagues whom he can support in their career and personal growth.</p>
-			</div> -->
-			<div class="resources">
-				<ul>
-					<li>
-						<div class="img-brace" style="background: url('assets/incognito.jpg'); background-position: top center; background-size: cover;"></div>
-						<h4>Project Managers</h4>
-						<p>Our Project Management depth is significant and crosses many individuals and varying levels of scale and complexity. From Project Management of Technical Infrastructure and Data Centre migrations to Program Management of pan-Canadian Application Implementations, our senior resources bring many years of successful experience.</p>
-					</li>
+	<div id="specialist-container" class="container">
+		<?php $all_staff = get_staff_by_all_terms(); ?>
+		
+			
+		<?php foreach($all_staff as $staff_members) : ?>
+			
+			<?php $list_id = 'staff-list-' . $staff_members['term']->term_id; ?>
+			<div class="staff-container align-center-xs">
+				<h3 class="staff-specialty">
+					<a href="#<?php echo $list_id; ?>" class="no-click" data-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $list_id; ?>"><?php echo $staff_members['term']->name; ?></a>
+				</h3>
+				<p class="description hide-md show-xs">
+					<?php echo $staff_members['term']->description; ?>
+				</p>
+				<ul id="<?php echo $list_id; ?>" class="staff-list reset collapse">
+					<?php foreach( $staff_members['staff'] as $staff ) : ?>
 
-					<li>
-						<div class="img-brace" style="background: url('assets/incognito.jpg'); background-position: top center; background-size: cover;"></div>
-						<h4>Architects</h4>
-						<p>Our architect capabilities are focused in several very strong and experienced Architects who have very successfully performed as Enterprise, Application, Solution and Technical Architects. Their many years of experience is often sought in Technical Advisory roles.</p>
-					</li>
-
-					<li>
-						<div class="img-brace" style="background: url('assets/incognito.jpg'); background-position: top center; background-size: cover;"></div>
-						<h4>Business Analysts</h4>
-						<p>Our business Analysts capture and document business requirements through the use of planning sessions, business models, system surveys, etc while also understanding technical systems design, system development and maintenance, package implementation, testing and training.</p>
-					</li>
-
-					<li>
-						<div class="img-brace" style="background: url('assets/incognito.jpg'); background-position: top center; background-size: cover;"></div>
-						<h4>Consultants</h4>
-						<p>Our Consultants include Technical and Systems Analysts as well as Developers across several technologies. Some areas of expertise include ASD/ Outsourcing, Business and Market Analysis, Business Process Improvement, and Organizational Design. Technical focus includes Java and Oracle technologies and applications.</p>
-					</li>
-
-					<li>
-						<div class="img-brace" style="background: url('assets/incognito.jpg'); background-position: top center; background-size: cover;"></div>
-						<h4>Specialists</h4>
-						<p>Many of our practitioners have gained the knowledge and experience to be considered an expert or specialist in their field, either industry focused, such as in Healthcare or LNG/Oil &amp; Gas, or skills focused, such asin  Business Intelligence or Benefits Realization. These resources function as Consultants, Project Leaders, Analysts or even Advisors in the delivery of their specialty skills.</p>
-					</li>
-
+						<li class="profile-container">
+							<div class="profile-img">
+								<?php echo get_staff_img($staff->ID); ?>
+							</div>
+							<p>
+								<strong><?php echo $staff->post_title; ?></strong>
+							</p>
+							<p><?php echo $staff->post_content; ?></p>
+						</li>
+					<?php endforeach; ?>
 				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
 
+			</div>
+		<?php endforeach; ?>
+		
 	</div>
+	
 </div>
 
-<div class="section-services">
+<div class="section-services clearfix">
 	<a name="services" id="services"></a>
 	<h2 class="section-marker"><div class="contain">Services</div></h2>
 	<div class="contain">
 		<p class="announce-big">Antibe is a group of experienced resources specializing in</p>
 
-		<ul class="services-array">
-			<li>
-				<h3 class="bebas">Strategy &amp; Change Implementation</h3>
-				<div class="v-keyline"></div>
-				<div class="graphic">&#xf085;</div>
-				<div class="v-keyline"></div>
-				<p>We work with organizations to develop a strategy to achieve their goals and focus and define their needs for required projects. We specialize in organizational transformation, process improvement and change management and communications.</p>
-			</li>
-			<li>
-				<h3>Full life cycle project delivery</h3>
-				<div class="v-keyline"></div>
-				<div class="graphic">&#xf0e8;</div>
-				<div class="v-keyline"></div>
-				<p>From concept to delivery, we produce high quality work at every step of the project life cycle, including planning, development, testing and deployment.</p>
-			</li>
-			<li>
-				<h3>Package &amp; systems implementation</h3>
-				<div class="v-keyline"></div>
-				<div class="graphic">&#xf12e;</div>
-				<div class="v-keyline"></div>
-				<p>We work with you to determine the best option for your needs and develop or configure the right software system. Our experienced team of architects, specialists and developers ensure quality customized systems.</p>
-			</li>
-			<li>
-				<h3>Quality Assurance &amp; Testing</h3>
-				<div class="v-keyline"></div>
-				<div class="graphic">&#xf0e7;</div>
-				<div class="v-keyline"></div>
-				<p>With a focus on quality assurance we recognize and ensure that appropriate testing and reviews are conducted at all stages of a project lifecycle.</p>
-			</li>
+		<ul class="services-array clearfix">
+			<div class="col-sm-6">
+				<li class="col-sm-6 col first">
+					<h3 class="bebas">Strategy &amp; Change Implementation</h3>
+					<div class="v-keyline"></div>
+					<div class="graphic">&#xf085;</div>
+					<div class="v-keyline"></div>
+					<p>We work with organizations to develop a strategy to achieve their goals and focus and define their needs for required projects. We specialize in organizational transformation, process improvement and change management and communications.</p>
+				</li>
+				<li class="col-sm-6 col">
+					<h3>Full life cycle project delivery</h3>
+					<div class="v-keyline"></div>
+					<div class="graphic">&#xf0e8;</div>
+					<div class="v-keyline"></div>
+					<p>From concept to delivery, we produce high quality work at every step of the project life cycle, including planning, development, testing and deployment.</p>
+				</li>
+			</div>
+			<div class="col-sm-6">
+				<li class="col-sm-6 col">
+					<h3>Package &amp; systems implementation</h3>
+					<div class="v-keyline"></div>
+					<div class="graphic">&#xf12e;</div>
+					<div class="v-keyline"></div>
+					<p>We work with you to determine the best option for your needs and develop or configure the right software system. Our experienced team of architects, specialists and developers ensure quality customized systems.</p>
+				</li>
+				<li class="col-sm-6 col">
+					<h3>Quality Assurance &amp; <br> Testing</h3>
+					<div class="v-keyline"></div>
+					<div class="graphic">&#xf0e7;</div>
+					<div class="v-keyline"></div>
+					<p>With a focus on quality assurance we recognize and ensure that appropriate testing and reviews are conducted at all stages of a project lifecycle.</p>
+				</li>
+			</div>
 		</ul>
 		<div class="clear"></div>
 	</div>

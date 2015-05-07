@@ -201,6 +201,8 @@ function sparkling_scripts() {
   // Add slider CSS only if is front page ans slider is enabled
   if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
 		wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
+
+
   }
 
   // wp_enqueue_style( 'font-awesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
@@ -223,11 +225,11 @@ function sparkling_scripts() {
 
   if( is_front_page() ) {
 
-
+    wp_enqueue_style( 'rs-slides-styles', get_template_directory_uri() . '/css/rs-slides.css');
     wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), '3.3.0', true );
     wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/waypoints.min.js', array('jquery'), '2.0.4', true);
     wp_enqueue_script( 'waypoint-script', get_template_directory_uri() . '/js/script.js', array('waypoints'), '1.0.0', true );
-
+    wp_enqueue_script('rs-slide', get_template_directory_uri() . '/js/rs-slides.js', array('jquery', 'waypoint-script'));
   }
   // Main theme related functions
 	wp_enqueue_script( 'sparkling-bootstrapwp', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
