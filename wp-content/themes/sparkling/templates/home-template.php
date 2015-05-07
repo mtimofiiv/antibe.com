@@ -47,7 +47,7 @@ get_header('home');
 			</h2>
 		</div>
 	</div>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, expedita. Amet voluptas, fugiat modi esse eos dolorem maiores necessitatibus temporibus facilis sapiente sequi quisquam, adipisci hic earum praesentium ut debitis.
+	
 	<div class="container">
 		<p class="announce">We are a network of highly experienced professionals covering a wide-range of roles, who are matched to each project based on its needs. Our primary team is built from a group of people who have many years of previous experience working together on diverse projects and who all believe in delivering excellence through collaboration and trust.</p>
 	</div>
