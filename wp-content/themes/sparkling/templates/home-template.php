@@ -66,16 +66,16 @@ get_header('home');
 			</p>
 		</div>
 	</div>
-	<div id="specialist-container" class="container">
+	<div id="specialist-container" class="container half-sphere-container relative">
 		<?php $all_staff = get_staff_by_all_terms(); ?>
-		
+		<?php $counter = 1; ?>
 			
 		<?php foreach($all_staff as $staff_members) : ?>
 			
 			<?php $list_id = 'staff-list-' . $staff_members['term']->term_id; ?>
-			<div class="staff-container align-center-xs">
-				<h3 class="staff-specialty">
-					<a href="#<?php echo $list_id; ?>" class="no-click" data-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $list_id; ?>"><?php echo $staff_members['term']->name; ?></a>
+			<div class="staff-container align-center-xs sphere-el">
+				<h3 id="specialty-<?php echo $counter; ?>" class="staff-specialty bg-color">
+					<a href="#<?php echo $list_id; ?>" class="no-click open-modal" data-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $list_id; ?>"><?php echo $staff_members['term']->name; ?></a>
 				</h3>
 				<p class="description hide-md show-xs">
 					<?php echo $staff_members['term']->description; ?>
@@ -94,9 +94,13 @@ get_header('home');
 						</li>
 					<?php endforeach; ?>
 				</ul>
-
 			</div>
+
+			<?php $counter++; ?>
 		<?php endforeach; ?>
+		<div class="align-center-xs hug-bottom center-sphere">
+			<i class="fa fa-users circle-border fs-45 bg-color"></i>
+		</div>
 		
 	</div>
 	

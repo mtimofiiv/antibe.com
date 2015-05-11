@@ -67,6 +67,14 @@ a img {
   padding: 5px;
 }*/
 
+.fs-45 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.bg-color {
+  background: #F2F2F2;
+}
 .main-nav {
   list-style-type: none;
   /*float: right;*/
@@ -135,11 +143,15 @@ a img {
 .profile-img-wrapper {
 }
 
-.profile-img {
+.profile-img, .circle-border {
   display: inline-block;
   overflow: hidden;
   border-radius: 50%;
   border: 10px solid #83161a;
+}
+
+.circle-border {
+  padding: 10px;
 }
 p.announce {
   font-size: 24px;
@@ -378,6 +390,54 @@ ul.reset {
   display: none;
 }
 
+.hug-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-header .btn.btn-default {
+  color: #000;
+  padding: 6px;
+
+}
+
+.modal-header .btn.btn-default:hover {
+  background-color: transparent;
+}
+
+.slider {
+  position: relative;
+  /*padding: 20px; */
+}
+.slider ul { 
+  position: relative; 
+  overflow: auto; 
+}
+.slide { 
+  list-style: none; 
+  float: left;
+  padding: 20px 40px;
+}
+
+.slider .slide-next {
+  right: 0;
+
+}
+
+.slider .slide-prev {
+  left: 0;
+}
+
+.slider .slide-control {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  z-index: 5;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   
   .screen-sm-min {
@@ -408,7 +468,6 @@ ul.reset {
     text-align: center;
   }
 }
-
 @media screen and (min-width: 992px) {
   .screen-md-min {
     display: block;
@@ -419,5 +478,21 @@ ul.reset {
   }
   .collapse.in .profile-container {
     display: none;
+  }
+
+  .half-sphere-container {
+    height: 350px;
+    position: relative;
+  }
+  
+  .staff-specialty {
+    position:absolute;
+    z-index: 5;
+  }
+  .horizontal-line {
+    padding:0px; 
+    margin:0px; 
+    line-height:1px; 
+    position:absolute;
   }
 }
