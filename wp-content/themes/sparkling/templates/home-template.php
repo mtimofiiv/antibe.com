@@ -49,7 +49,7 @@ get_header('home');
 	</div>
 	
 	<div class="container">
-		<p class="announce">We are a network of highly experienced professionals covering a wide-range of roles, who are matched to each project based on its needs. Our primary team is built from a group of people who have many years of previous experience working together on diverse projects and who all believe in delivering excellence through collaboration and trust.</p>
+		<p class="announce text-red">We are a network of highly experienced professionals covering a wide-range of roles, who are matched to each project based on its needs. Our primary team is built from a group of people who have many years of previous experience working together on diverse projects and who all believe in delivering excellence through collaboration and trust.</p>
 	</div>
 	<div class="container">
 		<div class="profile-img-wrapper align-center-xs col-md-2 col-sm-3">
@@ -108,8 +108,15 @@ get_header('home');
 
 <div class="section-services clearfix">
 	<a name="services" id="services"></a>
-	<h2 class="section-marker"><div class="contain">Services</div></h2>
-	<div class="contain">
+	<div class="section-marker">
+		<div class="container">
+			<h2 class="section-title">
+				Services
+			</h2>
+		</div>
+		
+	</div>
+	<div class="contain text-red">
 		<p class="announce-big">Antibe is a group of experienced resources specializing in</p>
 
 		<ul class="services-array clearfix">
@@ -152,8 +159,12 @@ get_header('home');
 
 <div class="section-join">
 	<a name="join" id="join"></a>
-	<h2 class="section-marker"><div class="contain">Join Us</div></h2>
-	<div class="contain">
+	<div class="section-marker">
+		<div class="container">
+			<h2 class="section-title">Join Us</h2>
+		</div>
+	</div>
+	<div class="contain text-red">
 		<p class="announce">Our vision is not only to deliver excellence to our clients, but also to provide an environment for skilled, experienced professionals to work together in a flexible environment on large-scale, exciting projects.</p>
 
 		<ul class="two-column">
@@ -190,8 +201,12 @@ get_header('home');
 
 <div class="section-contact">
 	<a name="contact" id="contact"></a>
-	<h2 class="section-marker"><div class="contain">Contact Us</div></h2>
-	<div class="contain">
+	<div class="section-marker">
+		<div class="container">
+			<h2 class="section-title">Contact Us</h2>
+		</div>
+	</div>
+	<div class="contain text-red">
 		<p class="announce-big">If you are a a service provider or client organization looking for project delivery support, or if you are a contractor looking for exciting work opportunities, please contact us at:</p>
 
 		<a href="mailto:info@antibe.com" class="big-link-btn"><i>&#xf003;</i> info@antibe.com</a>

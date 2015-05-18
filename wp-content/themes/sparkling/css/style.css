@@ -46,6 +46,9 @@ a img {
   border: 0;
 }*/
 
+body.home {
+  background-color: #fff;
+}
 .clear {
   clear: both;
 }
@@ -75,6 +78,9 @@ a img {
 .bg-color {
   background: #F2F2F2;
 }
+.home .bg-color {
+  background: #fff;
+}
 .main-nav {
   list-style-type: none;
   /*float: right;*/
@@ -102,10 +108,14 @@ a img {
   margin: 0 auto;
 }
 
+.text-red {
+  color: #83161a;
+}
 .section-title {
   font-family: 'BN', Impact, Helvetica, Arial, sans-serif;
   color: #83161a;
   font-size: 48px;
+  margin:0;
 }
 
 .section-marker {
@@ -136,6 +146,9 @@ a img {
   padding: 25px 0;
 }
 
+.section-team {
+  margin-bottom: 50px;
+}
 /*.section-home div.tagline p {
   width: 750px;
 }*/
