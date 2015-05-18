@@ -48,6 +48,7 @@ a img {
 
 body.home {
   background-color: #fff;
+  line-height: 1.2;
 }
 .clear {
   clear: both;
