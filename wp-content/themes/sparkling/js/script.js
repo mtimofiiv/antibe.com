@@ -158,7 +158,7 @@ jQuery(document).ready(function($) {
 		var slides = $modal_window.find('.slide');
 		equal_height_cols(slides);
 
-		modal_slider = $modal_window.find('.slider').unslider({
+		modal_slider = $modal_window.delay(500).find('.slider').unslider({
 			delay: false,
 		});
 
