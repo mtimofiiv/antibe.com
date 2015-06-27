@@ -115,7 +115,6 @@ jQuery(document).ready(function($) {
 	function open_profile_modal(e) {
 		e.preventDefault();
 
-		console.log('opening modal');
 		if( !is_screen_md() ) {
 			return;
 		}
@@ -153,14 +152,13 @@ jQuery(document).ready(function($) {
 	}
 
 	function show_modal(e) {
-
-		console.log( 'show modal event fired' );
+		
+		modal_slider = $modal_window.find('.slider').unslider({
+			delay: false
+		});
+		
 		var slides = $modal_window.find('.slide');
 		equal_height_cols(slides);
-
-		modal_slider = $modal_window.delay(500).find('.slider').unslider({
-			delay: false,
-		});
 
 		modal_slider.find('.slide-control').click(modal_controls);
 	}
@@ -168,7 +166,6 @@ jQuery(document).ready(function($) {
 	function modal_controls(e) {
 		// e.preventDefault();
 
-		console.log(this);
 		if( $(this).hasClass('.slide-next') ) {
 			modal_slider.data('unslider')['next']();
 		} else {
