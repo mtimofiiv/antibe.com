@@ -452,6 +452,13 @@ ul.reset {
   cursor: pointer;
 }
 
+.open-modal i {
+  font-size: 18px;
+  position: relative;
+  top: -2px;
+  left: 5px;
+}
+
 @media screen and (min-width: 768px) {
   
   .screen-sm-min {
