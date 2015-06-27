@@ -75,7 +75,7 @@ get_header('home');
 			<?php $list_id = 'staff-list-' . $staff_members['term']->term_id; ?>
 			<div class="staff-container align-center-xs sphere-el">
 				<h3 id="specialty-<?php echo $counter; ?>" class="staff-specialty bg-color">
-					<a href="#<?php echo $list_id; ?>" class="no-click open-modal" data-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $list_id; ?>"><?php echo $staff_members['term']->name; ?></a>
+					<a href="#<?php echo $list_id; ?>" class="no-click open-modal" data-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $list_id; ?>"><?php echo $staff_members['term']->name; ?> <i class="fa fa-external-link"></i></a>
 				</h3>
 				<p class="description hide-md show-xs">
 					<?php echo $staff_members['term']->description; ?>
