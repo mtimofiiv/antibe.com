@@ -117,7 +117,7 @@ get_header('home');
 		
 	</div>
 	<div class="contain text-red">
-		<p class="announce-big">Antibe is a group of experienced resources specializing in</p>
+		<p class="announce-big">Antibe specializes in providing experienced people who are experienced in:</p>
 
 		<ul class="services-array clearfix">
 			<div class="col-sm-6">
