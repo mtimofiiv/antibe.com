@@ -139,6 +139,8 @@ jQuery(document).ready(function($) {
 
 		var _modal_body = $('#modal-window').find('.modal-body');
 
+		_modal_body.addClass('invisible');
+
 		$('#modal-window').find('.modal-title').text(modal_title);
 		_modal_body.text(modal_content);
 
@@ -156,6 +158,8 @@ jQuery(document).ready(function($) {
 		modal_slider = $modal_window.find('.slider').unslider({
 			delay: false
 		});
+		
+		$modal_window.find('.modal-body').removeClass('invisible');
 		
 		var slides = $modal_window.find('.slide');
 		equal_height_cols(slides);

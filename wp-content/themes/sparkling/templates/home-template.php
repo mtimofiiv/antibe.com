@@ -12,7 +12,7 @@ get_header('home');
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title">
+				<h4 class="modal-title text-red">
 					
 				</h4>
 			</div>
@@ -58,7 +58,7 @@ get_header('home');
 			</div>
 		</div>
 		<div class="col-md-10 col-sm-9">
-			<h4 class="heading-small large-text-xs align-left-sm align-center-xs">
+			<h4 class="heading-small large-text-xs align-left-sm align-center-xs text-red">
 				Dave Rogers, <br class="hide-sm"><span class="grey-xs red-sm">President</span>
 			</h4>
 			<p class="align-left-sm align-center-xs">
@@ -74,7 +74,7 @@ get_header('home');
 			
 			<?php $list_id = 'staff-list-' . $staff_members['term']->term_id; ?>
 			<div class="staff-container align-center-xs sphere-el">
-				<h3 id="specialty-<?php echo $counter; ?>" class="staff-specialty bg-color">
+				<h3 id="specialty-<?php echo $counter; ?>" class="staff-specialty bg-color text-red">
 					<a href="#<?php echo $list_id; ?>" class="no-click open-modal" data-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $list_id; ?>"><?php echo $staff_members['term']->name; ?> <i class="fa fa-external-link"></i></a>
 				</h3>
 				<p class="description hide-md show-xs">
@@ -98,7 +98,7 @@ get_header('home');
 
 			<?php $counter++; ?>
 		<?php endforeach; ?>
-		<div class="align-center-xs hug-bottom center-sphere">
+		<div class="align-center-xs hug-bottom center-sphere hide-xs block-md">
 			<i class="fa fa-users circle-border fs-45 bg-color"></i>
 		</div>
 		

@@ -76,6 +76,9 @@ body.home {
   line-height: 45px;
 }
 
+.invisible {
+  visibility: hidden;
+}
 .bg-color {
   background: #F2F2F2;
 }
@@ -109,9 +112,11 @@ body.home {
   margin: 0 auto;
 }
 
-.text-red {
+.text-red,
+.text-red a {
   color: #83161a;
 }
+
 .section-title {
   font-family: 'BN', Impact, Helvetica, Arial, sans-serif;
   color: #83161a;
@@ -386,7 +391,7 @@ ul.reset {
 }
 
 .red-xs {
-  color: #DA4453
+  color: #83161a;
 }
 
 .large-text-xs {
@@ -467,9 +472,12 @@ ul.reset {
   .hide-sm {
     display: none;
   }
+  .block-sm {
+    display: block;
+  }
   .heading-small {
     font-size: 20px;
-    border-bottom: 4px solid #DA4453;
+    border-bottom: 4px solid #83161a;
   }
 
   .grey-sm {
@@ -478,7 +486,7 @@ ul.reset {
   }
 
   .red-sm {
-    color: #DA4453;
+    color: #83161a;
   }
 
   .align-left-sm {
@@ -496,6 +504,9 @@ ul.reset {
 
   .hide-md {
     display: none;
+  }
+  .block-md {
+    display: block;
   }
   .collapse.in .profile-container {
     display: none;
