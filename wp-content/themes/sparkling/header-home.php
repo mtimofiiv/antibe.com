@@ -64,7 +64,7 @@
 						<?php if( !get_header_image() ) : ?>
 
 							<div id="logo">
-								<a class="main-logo" href="http://antibe.com">
+								<a class="main-logo" href="/">
 									<img src="/assets/gss-white.png">
 									<span>Get Smart Solutions</span>
 								</a>
@@ -85,7 +85,7 @@
 								<li class="hide-xs show-sm">|</li>
 								<li><a id="nav-contact" href="<?php echo $relative_path; ?>#contact" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Contact Us</a></li>
 								<li class="hide-xs show-sm">|</li>
-								<li><a href="http://blog.antibe.com">Blog</a></li>
+								<li><a href="/blog">Blog</a></li>
 							</ul>
 				        </div>
 					<?php // sparkling_header_menu(); ?>
