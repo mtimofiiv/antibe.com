@@ -77,13 +77,13 @@
 				        <div id="main-nav" class="collapse navbar-collapse">
 				        	<?php $relative_path = get_relative_menu_path(); ?>
 				        	<ul class="main-nav" data-scroll-header>
-								<li><a id="nav-team" href="<?php echo $relative_path; ?>#team" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Dave &amp; the Team</a></li>
+								<li><a id="nav-team" href="/#team" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Dave &amp; the Team</a></li>
 								<li class="hide-xs show-sm">|</li>
-								<li><a id="nav-services" href="<?php echo $relative_path; ?>#services" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Services</a></li>
+								<li><a id="nav-services" href="/#services" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Services</a></li>
 								<li class="hide-xs show-sm">|</li>
-								<li><a id="nav-join" href="<?php echo $relative_path; ?>#join" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Join Us</a></li>
+								<li><a id="nav-join" href="/#join" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Join Us</a></li>
 								<li class="hide-xs show-sm">|</li>
-								<li><a id="nav-contact" href="<?php echo $relative_path; ?>#contact" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Contact Us</a></li>
+								<li><a id="nav-contact" href="/#contact" data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true">Contact Us</a></li>
 								<li class="hide-xs show-sm">|</li>
 								<li><a href="/blog">Blog</a></li>
 							</ul>
