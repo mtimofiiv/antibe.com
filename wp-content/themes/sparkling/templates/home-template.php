@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Template Name: Homepage
  */
@@ -13,14 +13,14 @@ get_header('home');
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title text-red">
-					
+
 				</h4>
 			</div>
 			<div class="modal-body">
-				
+
 			</div>
 			<div class="modal-footer">
-				
+
 			</div>
 		</div>
 	</div>
@@ -28,12 +28,12 @@ get_header('home');
 <div class="section-home">
 	<div class="container">
 		<a name="home" id="home"></a>
-		<h1>Antibe Resources Ltd</h1>
+		<h1>Get Smart Solutions</h1>
 	</div>
 
 	<div class="tagline">
 		<div class="container">
-			<p>We are a multi-service consulting agency made up of a group of highly experienced professionals, here to advise on and implement on your most complex projects.</p>
+			<p>We are a multi-service consulting agency made up of a group of highly experienced professionals, here to advise on and implement on your most complex projects. Formerly Antibe Resources Ltd, we have expanded our service offering and team, to help serve our clients better.</p>
 		</div>
 	</div>
 
@@ -47,7 +47,7 @@ get_header('home');
 			</h2>
 		</div>
 	</div>
-	
+
 	<div class="container">
 		<p class="announce text-red">We are a network of highly experienced professionals covering a wide-range of roles, who are matched to each project based on its needs. Our primary team is built from a group of people who have many years of previous experience working together on diverse projects and who all believe in delivering excellence through collaboration and trust.</p>
 	</div>
@@ -62,16 +62,16 @@ get_header('home');
 				Dave Rogers, <br class="hide-sm"><span class="grey-xs red-sm">President</span>
 			</h4>
 			<p class="align-left-sm align-center-xs">
-				Dave has over 30 years of professional engineering and consulting experience spanning a wide range of industries, including Public Sector, Health, Education, Energy Resources and Travel, with companies such as Coopers &amp; Lybrand, PricewaterhouseCoopers and IBM. His focus on quality assurance, delivery excellence and global delivery have earned him the reputation as a trusted Executive Advisor for both service providers and their clients. Through Antibe Resources Ltd he is seeking to continue working on his passion of large-scale project delivery by building a network of trusted and experienced colleagues whom he can support in their career and personal growth.
+				Dave has over 30 years of professional engineering and consulting experience spanning a wide range of industries, including Public Sector, Health, Education, Energy Resources and Travel, with companies such as Coopers &amp; Lybrand, PricewaterhouseCoopers and IBM. His focus on quality assurance, delivery excellence and global delivery have earned him the reputation as a trusted Executive Advisor for both service providers and their clients. Through Get Smart Solutions he is seeking to continue working on his passion of large-scale project delivery by building a network of trusted and experienced colleagues whom he can support in their career and personal growth.
 			</p>
 		</div>
 	</div>
 	<div id="specialist-container" class="container half-sphere-container relative">
 		<?php $all_staff = get_staff_by_all_terms(); ?>
 		<?php $counter = 1; ?>
-			
+
 		<?php foreach($all_staff as $staff_members) : ?>
-			
+
 			<?php $list_id = 'staff-list-' . $staff_members['term']->term_id; ?>
 			<div class="staff-container align-center-xs sphere-el">
 				<h3 id="specialty-<?php echo $counter; ?>" class="staff-specialty bg-color text-red">
@@ -101,9 +101,9 @@ get_header('home');
 		<div class="align-center-xs hug-bottom center-sphere hide-xs block-md">
 			<i class="fa fa-users circle-border fs-45 bg-color"></i>
 		</div>
-		
+
 	</div>
-	
+
 </div>
 
 <div class="section-services clearfix">
@@ -114,10 +114,10 @@ get_header('home');
 				Services
 			</h2>
 		</div>
-		
+
 	</div>
 	<div class="contain text-red">
-		<p class="announce-big">Antibe specializes in providing experienced people who are experienced in:</p>
+		<p class="announce-big">Get Smart specializes in providing experienced people who are experienced in:</p>
 
 		<ul class="services-array clearfix">
 			<div class="col-sm-6">
@@ -209,9 +209,8 @@ get_header('home');
 	<div class="contain text-red">
 		<p class="announce-big">If you are a a service provider or client organization looking for project delivery support, or if you are a contractor looking for exciting work opportunities, please contact us at:</p>
 
-		<a href="mailto:info@antibe.com" class="big-link-btn"><i>&#xf003;</i> info@antibe.com</a>
-		<a href="http://www.linkedin.com/company/antibe-resources-ltd-" class="big-link-btn"><i>&#xf0e1;</i> /company/antibe-resources-ltd</a>
-		<a href="https://plus.google.com/117473405488972704721" class="big-link-btn" rel="author"><i>&#xf0d5;</i> Google +</a>
+		<a href="mailto:info@getsmartsolutions.ca" class="big-link-btn"><i>&#xf003;</i> info@getsmartsolutions.ca</a>
+		<a href="http://www.linkedin.com/company/getsmart-solutions" class="big-link-btn"><i>&#xf0e1;</i> /company/getsmart-solutions</a>
 
 		<div style="height: 250px;"></div>
 

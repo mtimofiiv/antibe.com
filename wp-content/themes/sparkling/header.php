@@ -64,9 +64,8 @@
 						<?php if( !get_header_image() ) : ?>
 
 							<div id="logo">
-								<a class="main-logo" href="http://antibe.com"><img src="http://antibe.com/assets/branding.png"></a>
-								
-					            <!-- <a class="blog-home" href="<?php bloginfo('url'); ?>">Blog</a> -->
+								<a class="main-logo" href="http://antibe.com"><img src="/assets/gss-white.png"></a>
+					      <a class="blog-home" href="<?php bloginfo('url'); ?>">Get Smart Solutions</a>
 							</div><!-- end of #logo -->
 
 						<?php endif; // header image was removed (again) ?>

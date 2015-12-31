@@ -82,9 +82,11 @@ jQuery(document).ready(function($) {
 			top_buffer = $('#wpadminbar').height();
 		}
 		$('#masthead').css('top', top_buffer + 'px');
-		console.log(top_buffer);
 
-		$('#content').css('paddingTop', $('#masthead').height());
+		console.log($('#masthead').height());
+
+		//$('#content').css('paddingTop', $('#masthead').height());
+		$('#content').css('paddingTop', 84);
 	}
 
 	function no_click(e) {
@@ -127,7 +129,7 @@ jQuery(document).ready(function($) {
 		var cloned = staff_container.find('.staff-list').clone();
 		cloned.removeClass('collapse').removeAttr('style').find('li').addClass('slide');
 
-		
+
 		// cloned.responsiveSlides({
 		// 	auto: false,
 		// 	pagination: true,
@@ -135,7 +137,7 @@ jQuery(document).ready(function($) {
 		// 	fade: 500,
 		// 	manualControls: $('#modal-window .modal-footer')
 		// });
-		
+
 
 		var _modal_body = $('#modal-window').find('.modal-body');
 
@@ -148,19 +150,19 @@ jQuery(document).ready(function($) {
 		_modal_slider.appendTo(_modal_body);
 		_modal_slider.append('<div class="next-arrow slide-control slide-next"><i class="fa fa-arrow-circle-right"></i></div>');
 		_modal_slider.append('<div class="prev-arrow slide-control slide-prev"><i class="fa fa-arrow-circle-left"></i></div>');
-		
+
 		cloned.appendTo(_modal_slider);
 		$modal_window.modal('show');
 	}
 
 	function show_modal(e) {
-		
+
 		modal_slider = $modal_window.find('.slider').unslider({
 			delay: false
 		});
-		
+
 		$modal_window.find('.modal-body').removeClass('invisible');
-		
+
 		var slides = $modal_window.find('.slide');
 		equal_height_cols(slides);
 
@@ -178,7 +180,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function position_sphere_elements() {
-		
+
 		var $container = $('.half-sphere-container');
 		var $sphere_list = $container.find('.sphere-el .staff-specialty');
 		var $center = $('.center-sphere');
@@ -196,7 +198,7 @@ jQuery(document).ready(function($) {
 			// console.log(Math.cos(angle));
 			var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2),
 			y = Math.round(height + radius * Math.sin(angle) - ($(this).height() * 2) );
-			
+
 			// console.log( 'cos: ' + Math.cos(angle) );
 			// console.log( 'new cos: ' + Math.cos(angle * $sphere_list.length) );
 
@@ -281,6 +283,6 @@ function connect(div1, div2, color, thickness) { // draw a line connecting eleme
     var htmlLine = "<div class='horizontal-line' style='" + style + "' />";
     //
     // alert(htmlLine);
-    
+
     jQuery('#specialist-container').prepend(htmlLine);
 }

@@ -64,7 +64,7 @@
 				<?php if( !get_header_image() ) : ?>
 
 					<div id="logo">
-						<a class="main-logo" href="http://antibe.com"><img src="http://antibe.com/assets/branding.png"></a>
+						<a class="main-logo" href="http://antibe.com"><img src="/assets/gss-white.png"></a>
             <a class="blog-home" href="/">Blog</a>
 					</div><!-- end of #logo -->
 

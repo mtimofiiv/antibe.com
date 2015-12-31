@@ -75,7 +75,7 @@ body {
 }
 
 a {
-  color: #DA4453;
+  color: #FB9117;
   text-decoration: none;
   -webkit-transition: all 0.3s;
      -moz-transition: all 0.3s;
@@ -96,7 +96,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #DA4453;
+  color: #FB9117;
   font-weight: 700;
   font-family: 'BN', serif;
 }
@@ -321,14 +321,14 @@ footer.entry-meta {
   margin-right: 10px;
 }
 .entry-title {
-  color: #444;
+  color: #FB9117;
   margin-bottom: 30px;
 }
 .entry-title a {
-  color: #444;
+  color: #FB9117;
 }
 .entry-title a:hover {
-  color: #DA4453;
+  color: #FB9117;
 }
 .btn.btn-default.read-more {
   float: right;
@@ -662,8 +662,8 @@ object {
 /* =Buttons
 ----------------------------------------------- */
 .btn-default, .label-default {
-  background-color: #DA4453;
-  border-color: #DA4453;
+  background-color: #FB9117;
+  border-color: #FB9117;
   -webkit-transition: background-color 0.3s linear;
      -moz-transition: background-color 0.3s linear;
        -o-transition: background-color 0.3s linear;
@@ -1363,16 +1363,7 @@ button[type=submit],
   padding: 10px 0;
 }
 
-.main-logo span {
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-  position: relative;
-  top: 3px;
-  left: 6px;
-}
-
-#logo .blog-home {
+#logo .blog-home, .main-logo span {
   font-family: 'BN', 'sans-serif';
   color: white;
   font-size: 40px;
