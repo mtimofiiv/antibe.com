@@ -66,7 +66,7 @@
 							<div id="logo">
 								<a class="main-logo" href="/">
 									<img src="/assets/gss-white.png">
-									<span>Get Smart Solutions</span>
+									<span>GetSmart Solutions</span>
 								</a>
 					            <!-- <a class="blog-home" href="<?php bloginfo('url'); ?>">Blog</a> -->
 							</div><!-- end of #logo -->

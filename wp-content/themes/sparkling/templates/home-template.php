@@ -28,7 +28,7 @@ get_header('home');
 <div class="section-home">
 	<div class="container">
 		<a name="home" id="home"></a>
-		<h1>Get Smart Solutions</h1>
+		<h1>GetSmart Solutions</h1>
 	</div>
 
 	<div class="tagline">
@@ -62,7 +62,7 @@ get_header('home');
 				Dave Rogers, <br class="hide-sm"><span class="grey-xs red-sm">President</span>
 			</h4>
 			<p class="align-left-sm align-center-xs">
-				Dave has over 30 years of professional engineering and consulting experience spanning a wide range of industries, including Public Sector, Health, Education, Energy Resources and Travel, with companies such as Coopers &amp; Lybrand, PricewaterhouseCoopers and IBM. His focus on quality assurance, delivery excellence and global delivery have earned him the reputation as a trusted Executive Advisor for both service providers and their clients. Through Get Smart Solutions he is seeking to continue working on his passion of large-scale project delivery by building a network of trusted and experienced colleagues whom he can support in their career and personal growth.
+				Dave has over 30 years of professional engineering and consulting experience spanning a wide range of industries, including Public Sector, Health, Education, Energy Resources and Travel, with companies such as Coopers &amp; Lybrand, PricewaterhouseCoopers and IBM. His focus on quality assurance, delivery excellence and global delivery have earned him the reputation as a trusted Executive Advisor for both service providers and their clients. Through GetSmart Solutions he is seeking to continue working on his passion of large-scale project delivery by building a network of trusted and experienced colleagues whom he can support in their career and personal growth.
 			</p>
 		</div>
 	</div>
@@ -117,7 +117,7 @@ get_header('home');
 
 	</div>
 	<div class="contain text-red">
-		<p class="announce-big">Get Smart specializes in providing experienced people who are experienced in:</p>
+		<p class="announce-big">GetSmart specializes in providing experienced people who are experienced in:</p>
 
 		<ul class="services-array clearfix">
 			<div class="col-sm-6">
