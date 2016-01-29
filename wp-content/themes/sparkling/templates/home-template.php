@@ -33,7 +33,7 @@ get_header('home');
 
 	<div class="tagline">
 		<div class="container">
-			<p>We are a multi-service consulting agency made up of a group of highly experienced professionals, here to advise on and implement on your most complex projects. Formerly Antibe Resources Ltd, we have expanded our service offering and team, to help serve our clients better.</p>
+			<p>We are a multi-service consulting agency made up of a group of highly experienced professionals, here to advise on and implement your most complex projects. Formerly Antibe Resources Ltd, we have expanded our service offering and team, to help serve our clients better.</p>
 		</div>
 	</div>
 
